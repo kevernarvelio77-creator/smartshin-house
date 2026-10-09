@@ -1,0 +1,699 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#d6f0ff">
+<meta name="description" content="Smartshin House — Love, Hope &amp; Creative. Preschool, Daycare, Learning Center untuk CaLisMat, Primary, Mandarin, dan Montessori, serta Elderly Program (60+). Temukan tiga cabang di Surabaya.">
+<title>Smartshin House — Love, Hope &amp; Creative</title>
+<link rel="icon" type="image/jpeg" href="logo.jpg">
+<style>
+:root{--ink:#1b2e4b;--muted:#4d6280;--cream:#fffaf1;--sh:0 14px 34px -14px rgb(27 46 75/40%)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
+body{margin:0;font:400 16.5px/1.7 ui-rounded,"Nunito","Trebuchet MS","Segoe UI",system-ui,sans-serif;color:var(--ink);background:var(--cream);overflow-x:hidden}
+h1,h2,h3,p,figure,ul{margin:0}
+h1,h2,h3{line-height:1.12;text-wrap:balance}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+a:focus-visible{outline:3px solid #e63e78;outline-offset:4px;border-radius:10px}
+.wrap{width:min(1120px,calc(100% - 40px));margin-inline:auto}
+.skip{position:absolute;left:12px;top:-80px;z-index:100;background:#fff;padding:10px 16px;border-radius:12px;font-weight:800}
+.skip:focus{top:10px}
+.hdr{position:sticky;top:0;z-index:40;background:rgb(255 255 255/84%);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid rgb(27 46 75/8%)}
+.hdr-in{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:4px 10px;min-height:68px;padding-block:8px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.logo{width:46px;height:46px;flex:none;padding:2px;border-radius:50%;background:#fff;box-shadow:0 0 0 2px #ffd23f,0 4px 10px rgb(27 46 75/16%)}
+.logo span{display:block;position:relative;width:100%;height:100%;overflow:hidden;border-radius:50%}
+.logo img{position:absolute;width:121.04%;max-width:none;height:auto;left:-8.22%;top:-5.54%}
+.bn{font-weight:900;font-size:18px;line-height:1.15;letter-spacing:-.4px}
+.bn small{display:block;font-size:12.5px;font-weight:700;color:var(--muted);letter-spacing:0}
+.nav{display:flex;gap:4px}
+.nav a{min-height:42px;padding:0 14px;display:inline-flex;align-items:center;border-radius:999px;font-weight:800;font-size:14.5px;text-decoration:none;transition:background .2s}
+.nav a:hover{background:#ffe9a0}
+.nav .ig{display:none}
+.hero{position:relative;overflow:hidden;padding:30px 0 70px;border-radius:0 0 44px 44px;background:radial-gradient(circle at 10% 6%,#fff1a8 0,transparent 36%),radial-gradient(circle at 94% 34%,#ffd0e2 0,transparent 36%),linear-gradient(180deg,#cfeeff,#e8f8ff 62%,#fff6e4)}
+.hero-grid{position:relative;z-index:1;display:grid;gap:36px;align-items:center}
+.deco{position:absolute;z-index:0;font-size:30px;opacity:.6;pointer-events:none;animation:fl 5s ease-in-out infinite}
+.d1{top:9%;right:6%}.d2{bottom:5%;left:4%;font-size:40px;animation-delay:-2s}.d3{top:60%;right:3%;animation-delay:-3s}
+@keyframes fl{50%{transform:translateY(-12px) rotate(6deg)}}
+.pill{display:inline-flex;align-items:center;gap:9px;padding:9px 15px;border-radius:999px;background:#fff;box-shadow:var(--sh);font-size:13px;font-weight:900;letter-spacing:1.1px;line-height:1.3}
+.pill i{width:9px;height:9px;flex:none;border-radius:50%;background:#2fd6a1;box-shadow:0 0 0 4px rgb(47 214 161/28%)}
+h1{margin-top:20px;font-size:clamp(40px,12.5vw,68px);font-weight:900;letter-spacing:-1.8px;text-shadow:0 3px 0 rgb(255 255 255/85%)}
+h1 .a{color:#e63e78}h1 .b{color:#c96f00}h1 .c{color:#1580c9}
+.hrt{display:inline-block;font-size:.6em;vertical-align:.08em;animation:beat 1.7s ease-in-out infinite}
+@keyframes beat{0%,45%,100%{transform:scale(1)}12%{transform:scale(1.22)}28%{transform:scale(1.08)}}
+.lead{margin-top:18px;max-width:540px;font-size:17.5px;color:var(--muted)}
+.btn{min-height:54px;padding:0 26px;display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:999px;border:0;font:inherit;font-weight:900;font-size:16.5px;line-height:1.2;text-decoration:none;cursor:pointer;transition:transform .18s,box-shadow .18s,filter .18s}
+.btn:hover{transform:translateY(-3px)}.btn:active{transform:translateY(1px) scale(.98)}
+.btn-main{margin-top:26px;color:var(--ink);background:linear-gradient(135deg,#ffd23f,#ffae42);box-shadow:0 12px 24px -10px rgb(255 160 30/85%)}
+.btn-soft{width:100%;background:#f8edd4;box-shadow:inset 0 0 0 2px rgb(27 46 75/14%)}
+.btn-soft:hover{box-shadow:inset 0 0 0 2px var(--ink),0 10px 20px -10px rgb(27 46 75/40%)}
+.pic{position:relative;max-width:560px;margin-inline:auto;width:100%}
+.pic::before{content:"";position:absolute;inset:6% -3% -4% 5%;border-radius:36px;background:linear-gradient(135deg,#ffd23f,#ff8fb4);transform:rotate(-3deg)}
+.pic figure{position:relative;overflow:hidden;border-radius:30px;border:6px solid #fff;background:#dcf3fb;box-shadow:var(--sh)}
+.pic img{width:100%;height:auto;aspect-ratio:3/2;object-fit:contain}
+.cap{position:absolute;left:50%;bottom:-18px;translate:-50% 0;display:flex;align-items:center;gap:8px;padding:10px 20px;border-radius:999px;background:#fff;box-shadow:var(--sh);font-weight:900;font-size:15px;white-space:nowrap}
+.chips{display:flex;flex-wrap:wrap;justify-content:center;gap:9px;margin-top:44px}
+.chip{padding:7px 15px;border-radius:999px;font-size:14.5px;font-weight:800;box-shadow:0 5px 12px -6px rgb(27 46 75/35%)}
+.chip:nth-child(1){background:#ffe27a}.chip:nth-child(2){background:#9ff0cf}.chip:nth-child(3){background:#a8e0ff}.chip:nth-child(4){background:#ffc3d9}
+.sec{padding:64px 0}
+.eyebrow{margin-bottom:10px;font-size:13px;font-weight:900;letter-spacing:1.7px;color:#d6336c}
+h2{font-size:clamp(30px,8.2vw,46px);font-weight:900;letter-spacing:-1.1px}
+.sub{margin-top:12px;color:var(--muted);font-size:17px}
+.head{margin-bottom:30px}
+.grid{display:grid;gap:18px}
+.card{position:relative;padding:26px;border-radius:28px;box-shadow:var(--sh);transition:transform .22s,box-shadow .22s,opacity .6s,translate .6s}
+.card:hover{transform:translateY(-6px);box-shadow:0 22px 40px -16px rgb(27 46 75/45%)}
+.p1{background:linear-gradient(160deg,#fff4bd,#ffe07a)}.p2{background:linear-gradient(160deg,#d3f9e8,#8eeac5)}.p3{background:linear-gradient(160deg,#d6f1ff,#8fd6fb)}.p4{background:linear-gradient(160deg,#ffe3ed,#ffb3cc)}
+.top{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+.ico{display:grid;place-items:center;width:66px;height:66px;border-radius:21px;background:#fff;font-size:35px;box-shadow:0 8px 16px -8px rgb(27 46 75/45%);transform:rotate(-6deg);transition:transform .25s}
+.card:hover .ico{transform:rotate(5deg) scale(1.08)}
+.num{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:rgb(255 255 255/70%);font-size:14px;font-weight:900}
+.card h3{margin-bottom:10px;font-size:25px;font-weight:900;letter-spacing:-.5px}
+.card h3 small{font-size:.72em}
+.tracks{list-style:none;padding:0;margin-top:16px;display:flex;flex-wrap:wrap;gap:8px}
+.tracks li{padding:5px 13px;border-radius:999px;background:#fff;font-size:14px;font-weight:800}
+.together{margin-top:30px;display:flex;align-items:center;gap:16px;padding:26px;border-radius:28px;background:linear-gradient(135deg,#ffe27a,#ffb38a 55%,#ff9dbf);box-shadow:var(--sh)}
+.together .hrt{font-size:40px;flex:none;vertical-align:0}
+.together p{font-size:clamp(19px,5vw,25px);font-weight:900;line-height:1.4;letter-spacing:-.3px}
+.loc{background:linear-gradient(180deg,var(--cream),#e4f8ee 30%,#e4f8ee 75%,var(--cream))}
+.lc{display:flex;flex-direction:column;align-items:flex-start;background:#fff;border-top:8px solid var(--c)}
+.lc .top{width:100%}
+.pin{display:grid;place-items:center;width:52px;height:52px;border-radius:17px;background:var(--c);font-size:26px;transform:rotate(-5deg)}
+.tag{padding:5px 12px;border-radius:999px;background:var(--c);font-size:13px;font-weight:900;letter-spacing:.9px}
+.lb{font-size:14.5px;font-weight:800;color:var(--muted)}
+.lc h3{margin:3px 0 12px}
+.addr{margin-bottom:22px;flex:1}
+.lc .btn{min-height:50px}
+.con{background:var(--cream)}
+.cbox{display:grid;gap:28px;padding:30px 22px;border-radius:32px;background:linear-gradient(135deg,#ffe27a,#ffb38a 58%,#ff9dbf);box-shadow:var(--sh)}
+.cbox .eyebrow{color:#9c1f4c}
+.cbox h2{margin-bottom:16px}
+.cbox p+p{margin-top:12px}
+.cbox .t{font-size:17.5px}
+.links{display:grid;gap:14px;align-self:center}
+.cb{justify-content:flex-start;gap:14px;padding:16px 20px;border-radius:22px;text-align:left}
+.cb svg{width:32px;height:32px;flex:none}
+.cb strong{display:block;font-size:18.5px}
+.cb small{display:block;font-size:15px;font-weight:600;overflow-wrap:anywhere}
+.cb-wa{background:#25d366}.cb-ig{background:#ff97b9  }
+.cb-wa,.cb-ig{box-shadow:0 12px 22px -12px rgb(27 46 75/55%)}
+.ftr{padding:34px 0 104px;color:#fff;background:#1b2e4b;border-radius:40px 40px 0 0}
+.ftr-in{display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center}
+.fn{font-size:21px;font-weight:900}
+.fnote{font-size:14.5px;color:#c4d3e8}
+.up{min-height:46px;padding:0 20px;display:inline-flex;align-items:center;border-radius:999px;background:rgb(255 255 255/14%);font-weight:800;font-size:14.5px;text-decoration:none}
+.up:hover{background:rgb(255 255 255/24%)}
+.wa{position:fixed;right:max(16px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom));z-index:60;display:inline-flex;align-items:center;gap:9px;min-height:58px;padding:0 22px 0 15px;border-radius:999px;background:#25d366;color:var(--ink);font-size:18px;font-weight:900;text-decoration:none;box-shadow:0 12px 26px -8px rgb(18 140 70/80%),0 0 0 3px #fff;transition:transform .18s}
+.wa svg{width:31px;height:31px}
+.wa::before{content:"";position:absolute;inset:-3px;border:3px solid #25d366;border-radius:inherit;pointer-events:none;animation:ping 2.4s ease-out infinite}
+.wa:hover{transform:translateY(-3px)}.wa:active{transform:scale(.96)}
+/* CABANG 01 - HIJAU */
+.lc:nth-of-type(1) {
+    background-color: #D9FBE8;
+}
+
+.lc:nth-of-type(1) .btn-soft {
+    background-color: #65D9A4;
+    color: #124B35;
+    border: none;
+}
+
+/* CABANG 02 - PINK */
+.lc:nth-of-type(2) {
+    background-color: #FFE0EC;
+}
+
+.lc:nth-of-type(2) .btn-soft {
+    background-color: #FF9FBE;
+    color: #752443;
+    border: none;
+}
+
+/* CABANG 03 - BIRU */
+.lc:nth-of-type(3) {
+    background-color: #DDF2FF;
+}
+
+.lc:nth-of-type(3) .btn-soft {
+    background-color: #8FD6FB;
+    color: #164B70;
+    border: none;
+}
+
+/* STYLE TOMBOL SEMUA CABANG */
+.lc .btn-soft {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 22px;
+    border-radius: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+/* EFEK HOVER */
+.lc .btn-soft:hover {
+    filter: brightness(0.94);
+    transform: translateY(-2px);
+}
+
+/* RESPONSIVE HP */
+@media (max-width: 768px) {
+    .lc .btn-soft {
+        width: 100%;
+        box-sizing: border-box;
+        min-height: 46px;
+        text-align: center;
+    }
+}
+@keyframes ping{0%{transform:scale(1);opacity:.7}100%{transform:scale(1.4);opacity:0}}
+.js .reveal{opacity:0;translate:0 26px}.js .reveal.in{opacity:1;translate:none}
+@media(min-width:520px){.nav .ig{display:inline-flex}.bn{font-size:20px}.logo{width:50px;height:50px}}
+@media(min-width:640px){.wrap{width:min(1120px,calc(100% - 64px))}.grid{grid-template-columns:repeat(2,1fr);gap:24px}.lg>:last-child{grid-column:1/-1}.card{padding:30px}.cbox{padding:42px}.links{grid-template-columns:1fr 1fr}.sec{padding:80px 0}.hero{padding-top:44px}}
+@media(min-width:900px){.hero-grid{grid-template-columns:1.05fr 1fr;gap:56px}.lg{grid-template-columns:repeat(3,1fr)}.lg>:last-child{grid-column:auto}.cbox{grid-template-columns:1.3fr 1fr;gap:48px;padding:54px}.links{grid-template-columns:1fr}.hero{padding:64px 0 84px}.ftr-in{flex-direction:row;justify-content:space-between;text-align:left}.wa{right:28px;bottom:28px}}
+@media(max-width:360px){.wrap{width:calc(100% - 32px)}.bn{font-size:17px}.cap{font-size:13.5px;padding:9px 14px}.wa{font-size:16px;padding:0 18px 0 12px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+/* Teks program diam di atas; hanya gambar di bawahnya yang bergeser. */
+.gallery-carousel{position:relative;min-width:0;isolation:isolate}
+.gallery-track{position:relative;display:flex;align-items:stretch;gap:0;width:100%;min-width:0;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;direction:ltr}
+.gallery-track::-webkit-scrollbar{display:none}
+.gallery-slide{flex:0 0 100%;min-width:0;display:flex;flex-direction:column;scroll-snap-align:start;scroll-snap-stop:always}
+.gallery-media{display:block;position:relative;width:100%;aspect-ratio:1000/707;padding:0;margin:0;overflow:hidden;flex:none;border:0;border-radius:0;background:#073d6a;color:inherit;font:inherit;cursor:zoom-in;touch-action:auto}
+.gallery-media img{display:block;width:100%;height:100%;max-width:100%;aspect-ratio:auto;object-fit:cover;object-position:center;user-select:none;-webkit-user-drag:none}
+.program-galleries{display:grid;grid-column:1/-1;grid-template-columns:minmax(0,1fr);grid-auto-rows:1fr;align-items:stretch;gap:inherit;min-width:0}
+.gallery-card{display:flex;flex-direction:column;padding:0!important;overflow:hidden;align-self:stretch;min-width:0}
+.gallery-card .gallery-copy{flex:1;min-width:0;padding:22px 22px 20px}
+.gallery-card .top{margin-bottom:14px}
+.gallery-card .ico{width:48px;height:48px;font-size:27px;border-radius:16px}
+.gallery-card .num{width:34px;height:34px;font-size:13px}
+.gallery-card h3{font-size:clamp(23px,5.9vw,27px);line-height:1.2}
+.gallery-card .gallery-copy p{font-size:16px;line-height:1.65}
+.gallery-card .tracks{margin-top:13px;gap:7px}
+.gallery-card .tracks li{padding:4px 11px;font-size:13px}
+.gallery-card .gallery-media{margin-top:auto}
+.pic .gallery-surface{border:0;border-radius:30px;background:#073d6a;overflow:hidden;box-shadow:var(--sh)}
+.pic::before{inset:6px -6px auto 6px;aspect-ratio:1000/707}
+.pic .cap{position:relative;left:auto;bottom:auto;translate:none;width:fit-content;max-width:100%;min-height:44px;justify-content:center;margin:18px auto 0;padding:10px 16px;font-size:clamp(13.5px,3.7vw,15px);line-height:1.45;text-align:center;white-space:normal;text-wrap:balance}
+.pic .cap span{flex:none}
+.hero .chips{margin-top:16px;gap:8px}
+.gallery-carousel--hero,.gallery-carousel--viewer,.gallery-carousel--program{aspect-ratio:1000/707}
+.gallery-carousel--program{flex:0 0 auto}
+.gallery-carousel--hero .gallery-track,.gallery-carousel--viewer .gallery-track,.gallery-carousel--program .gallery-track{position:absolute;inset:0;width:100%;height:100%}
+.gallery-carousel--hero .gallery-media,.gallery-carousel--viewer .gallery-media,.gallery-carousel--program .gallery-media{height:100%;aspect-ratio:auto}
+.gallery-controls{position:absolute;left:0;right:0;bottom:0;aspect-ratio:1000/707;z-index:3;pointer-events:none;opacity:0;visibility:hidden;transition:opacity .18s,visibility .18s}
+.gallery-controls[hidden]{display:none}
+.gallery-carousel--hero .gallery-controls,.gallery-carousel--viewer .gallery-controls{inset:0;aspect-ratio:auto}
+.gallery-carousel.controls-visible>.gallery-controls{opacity:1;visibility:visible}
+.gallery-arrow{position:absolute;top:50%;translate:0 -50%;display:grid;place-items:center;width:44px;height:44px;padding:0;border:0;border-radius:12px;background:transparent;color:#fff;box-shadow:none;cursor:pointer;touch-action:manipulation;pointer-events:auto}
+.gallery-arrow svg{width:22px;height:22px;filter:drop-shadow(0 1px 3px rgb(0 0 0/60%))}
+.gallery-arrow--prev{left:10px}.gallery-arrow--next{right:10px}
+.gallery-arrow:hover{background:transparent}
+.gallery-dots{position:absolute;bottom:10px;left:50%;translate:-50% 0;display:flex;align-items:center;padding:2px;border-radius:999px;background:transparent;pointer-events:auto}
+.gallery-dot{width:44px;height:36px;display:grid;place-items:center;flex:none;padding:0;border:0;background:transparent;border-radius:999px;cursor:pointer;touch-action:manipulation}
+.gallery-dot::before{content:"";width:7px;height:7px;border-radius:50%;background:rgb(255 255 255/52%);box-shadow:0 1px 3px rgb(0 0 0/50%)}
+.gallery-dot[aria-current="true"]::before{width:20px;border-radius:999px;background:#fff}
+.gallery-track:focus-visible,.gallery-media:focus-visible{outline:3px solid #e63e78;outline-offset:-3px}
+.gallery-arrow:focus-visible,.gallery-dot:focus-visible,.gallery-close:focus-visible{outline:3px solid #ffd23f;outline-offset:2px}
+.gallery-track.is-dragging,.gallery-track.is-dragging .gallery-media{cursor:grabbing}
+.gallery-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+.gallery-viewer{width:min(1400px,calc(100vw - 16px),calc((100vh - 24px)*1.414427));width:min(1400px,calc(100vw - 16px),calc((100dvh - 24px)*1.414427));height:auto;max-width:none;max-height:none;margin:auto;padding:0;border:0;border-radius:18px;overflow:hidden;background:#073d6a;color:#fff;box-shadow:0 22px 80px rgb(0 0 0/45%)}
+.gallery-viewer::backdrop{background:rgb(9 19 33/90%)}
+.gallery-viewer .gallery-media{cursor:grab}
+.gallery-close{position:absolute;top:10px;right:10px;z-index:5;width:44px;height:44px;display:grid;place-items:center;padding:0;border:1px solid rgb(255 255 255/30%);border-radius:50%;background:rgb(12 26 45/78%);color:#fff;cursor:pointer;touch-action:manipulation}
+.gallery-close svg{width:22px;height:22px}
+.gallery-caption{position:absolute;top:10px;left:10px;max-width:calc(100% - 74px);padding:7px 11px;border-radius:10px;background:rgb(12 26 45/68%);color:#fff;font-size:13px;font-weight:800;line-height:1.4;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+body.gallery-viewer-open{overflow:hidden}
+@media(min-width:640px){.program-galleries{grid-template-columns:repeat(2,minmax(0,1fr))}.gallery-card .gallery-copy{padding:28px 28px 24px}}
+@media(max-width:360px){.gallery-card .gallery-copy{padding:20px 20px 18px}.gallery-card .gallery-copy p{font-size:15.5px}.gallery-arrow--prev{left:8px}.gallery-arrow--next{right:8px}}
+@media(prefers-reduced-motion:reduce){.gallery-controls{transition:none}}
+
+</style>
+</head>
+<body id="top">
+<a class="skip" href="#main">Lewati ke konten</a>
+<header class="hdr"><div class="wrap hdr-in">
+<a class="brand" href="#top" data-scroll-top aria-label="Smartshin House, kembali ke atas"><span class="logo"><span><img src="logo.jpg" width="633" height="595" alt="Logo Smartshin House" decoding="async"></span></span><span class="bn">Smartshin House<small>Love, Hope &amp; Creative</small></span></a>
+<nav class="nav" aria-label="Navigasi utama"><a href="#programs">Program</a><a href="#locations">Lokasi</a><a class="ig" href="https://www.instagram.com/smartshinhouse/" target="_blank" rel="noopener noreferrer">Instagram</a></nav>
+</div></header>
+<main id="main">
+<section class="hero" aria-labelledby="ht">
+<span class="deco d1" aria-hidden="true">⭐</span><span class="deco d2" aria-hidden="true">☁️</span><span class="deco d3" aria-hidden="true">🌈</span>
+<div class="wrap hero-grid">
+<div>
+<p class="pill"><i aria-hidden="true"></i>WELCOME TO SMARTSHIN HOUSE</p>
+<h1 id="ht"><span class="a">Love,</span> <span class="b">Hope</span> &amp;<br><span class="c">Creative</span> <span class="hrt">❤️</span></h1>
+<p class="lead">Smartshin House hadir untuk mendukung proses belajar, tumbuh kembang, dan aktivitas bermakna bagi anak-anak hingga orang tua berusia 60 tahun ke atas.</p>
+<a class="btn btn-main" href="#programs">Lihat Program <span aria-hidden="true">↓</span></a>
+</div>
+<div>
+<div class="pic"><figure class="gallery-surface gallery-carousel gallery-carousel--hero" data-gallery data-gallery-label="Smartshin House" role="region" aria-roledescription="carousel" aria-label="Galeri Smartshin House"><div class="gallery-track" data-gallery-track id="dashboard-track" tabindex="0" aria-label="Geser galeri Smartshin House"><div class="gallery-slide" role="group" aria-roledescription="slide" aria-label="Gambar 1 dari 5"><button class="gallery-media" type="button" data-open-image data-image-index="0" aria-haspopup="dialog" aria-controls="image-viewer" aria-label="Perbesar Ilustrasi Smartshin House, anak-anak hingga usia 60+."><img src="dashboard.webp" width="1200" height="800" loading="eager" decoding="async" draggable="false" alt="Ilustrasi Smartshin House, anak-anak hingga usia 60+." fetchpriority="high"></button></div><div class="gallery-slide" role="group" aria-roledescription="slide" aria-label="Gambar 2 dari 5"><button class="gallery-media" type="button" data-open-image data-image-index="1" aria-haspopup="dialog" aria-controls="image-viewer" aria-label="Perbesar Brosur Learning Center, halaman 1"><img src="1.png" width="2000" height="1414" loading="lazy" decoding="async" draggable="false" alt="Brosur Learning Center, halaman 1"></button></div><div class="gallery-slide" role="group" aria-roledescription="slide" aria-label="Gambar 3 dari 5"><button class="gallery-media" type="button" data-open-image data-image-index="2" aria-haspopup="dialog" aria-controls="image-viewer" aria-label="Perbesar Brosur Learning Center, halaman 2"><img src="2.png" width="2000" height="1414" loading="lazy" decoding="async" draggable="false" alt="Brosur Learning Center, halaman 2"></button></div><div class="gallery-slide" role="group" aria-roledescription="slide" aria-label="Gambar 4 dari 5"><button class="gallery-media" type="button" data-open-image data-image-index="3" aria-haspopup="dialog" aria-controls="image-viewer" aria-label="Perbesar Brosur Elderly Program (60+), halaman 1"><img src="3.png" width="2000" height="1414" loading="lazy" decoding="async" draggable="false" alt="Brosur Elderly Program (60+), halaman 1"></button></div><div class="gallery-slide" role="group" aria-roledescription="slide" aria-label="Gambar 5 dari 5"><button class="gallery-media" type="button" data-open-image data-image-index="4" aria-haspopup="dialog" aria-controls="image-viewer" aria-label="Perbesar Brosur Elderly Program (60+), halaman 2"><img src="4.png" width="2000" height="1414" loading="lazy" decoding="async" draggable="false" alt="Brosur Elderly Program (60+), halaman 2"></button></div></div><div class="gallery-controls" data-gallery-controls aria-hidden="true" hidden><button class="gallery-arrow gallery-arrow--prev" type="button" data-gallery-prev aria-label="Smartshin House: gambar sebelumnya" aria-controls="dashboard-track"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button><div class="gallery-dots"><button class="gallery-dot" type="button" data-gallery-dot="0" aria-label="Smartshin House: lihat gambar 1" aria-controls="dashboard-track" aria-current="true"></button><button class="gallery-dot" type="button" data-gallery-dot="1" aria-label="Smartshin House: lihat gambar 2" aria-controls="dashboard-track" aria-current="false"></button><button class="gallery-dot" type="button" data-gallery-dot="2" aria-label="Smartshin House: lihat gambar 3" aria-controls="dashboard-track" aria-current="false"></button><button class="gallery-dot" type="button" data-gallery-dot="3" aria-label="Smartshin House: lihat gambar 4" aria-controls="dashboard-track" aria-current="false"></button><button class="gallery-dot" type="button" data-gallery-dot="4" aria-label="Smartshin House: lihat gambar 5" aria-controls="dashboard-track" aria-current="false"></button></div><button class="gallery-arrow gallery-arrow--next" type="button" data-gallery-next aria-label="Smartshin House: gambar berikutnya" aria-controls="dashboard-track"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button></div><span class="gallery-sr" data-gallery-status role="status" aria-live="off" aria-atomic="true"></span></figure><p class="cap"><span aria-hidden="true">❤️</span>Dari anak-anak hingga usia 60+</p></div>
+<div class="chips" aria-label="Program Smartshin House"><span class="chip">Preschool</span><span class="chip">Daycare</span><span class="chip">Learning Center</span><span class="chip">Elderly 60+</span></div>
+</div>
+</div>
+</section>
+<section class="sec" id="programs" aria-labelledby="pt"><div class="wrap">
+<div class="head"><p class="eyebrow">OUR PROGRAMS</p><h2 id="pt">Belajar seru.<br>Tumbuh bersama.</h2></div>
+<div class="grid">
+<article class="card p1"><div class="top"><span class="ico" aria-hidden="true">🎨</span><span class="num" aria-hidden="true">01</span></div><h3>Preschool</h3><p>Program pendidikan anak usia dini melalui kegiatan belajar yang menyenangkan untuk mendukung tumbuh kembang, kreativitas, dan kemandirian anak.</p></article>
+<article class="card p2"><div class="top"><span class="ico" aria-hidden="true">🧸</span><span class="num" aria-hidden="true">02</span></div><h3>Daycare</h3><p>Layanan pengasuhan dan pendampingan anak yang dilengkapi dengan kegiatan pembelajaran berdasarkan kurikulum Smartshin House untuk mendukung tumbuh kembang, kreativitas, dan kemandirian anak dalam lingkungan yang nyaman dan menyenangkan.</p></article>
+<div class="program-galleries"><article class="card p3 gallery-card"><div class="gallery-copy"><div class="top"><span class="ico" aria-hidden="true">📚</span><span class="num" aria-hidden="true">03</span></div><h3>Learning Center</h3><p>Program pendampingan belajar CaLisMat, Primary, Mandarin, dan Montessori untuk mengembangkan keterampilan dan kepercayaan diri anak.</p><ul class="tracks"><li>CaLisMat</li><li>Primary</li><li>Mandarin</li><li>Montessori</li></ul></div><div class="gallery-carousel gallery-carousel--program" data-gallery data-gallery-label="Learning Center" role="region" aria-roledescription="carousel" aria-label="Brosur Learning Center"><div class="gallery-track" data-gallery-track id="learning-center-track" tabindex="0" aria-label="Geser brosur Learning Center"><div class="gallery-slide" role="group" aria-roledescription="slide" aria-label="Gambar 1 dari 2"><button class="gallery-media" type="button" data-open-image data-image-index="0" aria-haspopup="dialog" aria-controls="image-viewer" aria-label="Perbesar Brosur Learning Center, halaman 1"><img src="1.png" width="2000" height="1414" loading="lazy" decoding="async" draggable="false" alt="Brosur Learning Center, halaman 1"></button></div><div class="gallery-slide" role="group" aria-roledescription="slide" aria-label="Gambar 2 dari 2"><button class="gallery-media" type="button" data-open-image data-image-index="1" aria-haspopup="dialog" aria-controls="image-viewer" aria-label="Perbesar Brosur Learning Center, halaman 2"><img src="2.png" width="2000" height="1414" loading="lazy" decoding="async" draggable="false" alt="Brosur Learning Center, halaman 2"></button></div></div><div class="gallery-controls" data-gallery-controls aria-hidden="true" hidden><button class="gallery-arrow gallery-arrow--prev" type="button" data-gallery-prev aria-label="Learning Center: gambar sebelumnya" aria-controls="learning-center-track"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button><div class="gallery-dots"><button class="gallery-dot" type="button" data-gallery-dot="0" aria-label="Learning Center: lihat gambar 1" aria-controls="learning-center-track" aria-current="true"></button><button class="gallery-dot" type="button" data-gallery-dot="1" aria-label="Learning Center: lihat gambar 2" aria-controls="learning-center-track" aria-current="false"></button></div><button class="gallery-arrow gallery-arrow--next" type="button" data-gallery-next aria-label="Learning Center: gambar berikutnya" aria-controls="learning-center-track"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button></div><span class="gallery-sr" data-gallery-status role="status" aria-live="off" aria-atomic="true"></span></div></article><article class="card p4 gallery-card"><div class="gallery-copy"><div class="top"><span class="ico" aria-hidden="true">🌻</span><span class="num" aria-hidden="true">04</span></div><h3>Elderly Program <small>(60+)</small></h3><p>Berbagai kegiatan kreatif dan menyenangkan bagi orang tua berusia 60 tahun ke atas untuk mendukung kreativitas, menstimulasi daya ingat dan konsentrasi, serta menjaga interaksi sosial.</p></div><div class="gallery-carousel gallery-carousel--program" data-gallery data-gallery-label="Elderly Program (60+)" role="region" aria-roledescription="carousel" aria-label="Brosur Elderly Program (60+)"><div class="gallery-track" data-gallery-track id="elderly-program-track" tabindex="0" aria-label="Geser brosur Elderly Program (60+)"><div class="gallery-slide" role="group" aria-roledescription="slide" aria-label="Gambar 1 dari 2"><button class="gallery-media" type="button" data-open-image data-image-index="0" aria-haspopup="dialog" aria-controls="image-viewer" aria-label="Perbesar Brosur Elderly Program (60+), halaman 1"><img src="3.png" width="2000" height="1414" loading="lazy" decoding="async" draggable="false" alt="Brosur Elderly Program (60+), halaman 1"></button></div><div class="gallery-slide" role="group" aria-roledescription="slide" aria-label="Gambar 2 dari 2"><button class="gallery-media" type="button" data-open-image data-image-index="1" aria-haspopup="dialog" aria-controls="image-viewer" aria-label="Perbesar Brosur Elderly Program (60+), halaman 2"><img src="4.png" width="2000" height="1414" loading="lazy" decoding="async" draggable="false" alt="Brosur Elderly Program (60+), halaman 2"></button></div></div><div class="gallery-controls" data-gallery-controls aria-hidden="true" hidden><button class="gallery-arrow gallery-arrow--prev" type="button" data-gallery-prev aria-label="Elderly Program (60+): gambar sebelumnya" aria-controls="elderly-program-track"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button><div class="gallery-dots"><button class="gallery-dot" type="button" data-gallery-dot="0" aria-label="Elderly Program (60+): lihat gambar 1" aria-controls="elderly-program-track" aria-current="true"></button><button class="gallery-dot" type="button" data-gallery-dot="1" aria-label="Elderly Program (60+): lihat gambar 2" aria-controls="elderly-program-track" aria-current="false"></button></div><button class="gallery-arrow gallery-arrow--next" type="button" data-gallery-next aria-label="Elderly Program (60+): gambar berikutnya" aria-controls="elderly-program-track"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button></div><span class="gallery-sr" data-gallery-status role="status" aria-live="off" aria-atomic="true"></span></div></article></div>
+</div>
+<div class="together"><span class="hrt" aria-hidden="true">❤️</span><p>Mari tetap aktif, berkarya, dan bertumbuh bersama Smartshin House!</p></div>
+</div></section>
+<section class="sec loc" id="locations" aria-labelledby="lt"><div class="wrap">
+<div class="head"><p class="eyebrow">OUR LOCATIONS</p><h2 id="lt">Temukan Smartshin House<br>di Dekat Anda</h2><p class="sub">Tiga cabang di Surabaya. Pilih lokasi yang paling dekat dengan keluarga Anda.</p></div>
+<div class="grid lg">
+<article class="card lc" style="--c:#8eeac5"><div class="top"><span class="pin" aria-hidden="true">📍</span><span class="tag">CABANG 01</span></div><p class="lb">Smartshin House</p><h3>Galaxy Bumi Permai</h3><p class="addr">Galaxy Bumi Permai Tahap II, Blok L5 No. 3, Medokan Semampir, Sukolilo, Surabaya.</p><a class="btn btn-soft" href="https://www.google.com/maps/place/Smart+Shin+House+-+Daycare/@-7.3048456,112.784185,17z/data=!3m1!4b1!4m6!3m5!1s0x2dd7fbeb1501b851:0x7d85abf1f106aa28!8m2!3d-7.3048456!4d112.784185!16s%2Fg%2F11k5v4nlnv" target="_blank" rel="noopener noreferrer" aria-label="Buka Google Maps untuk Smartshin House Galaxy Bumi Permai">Buka Google Maps</a></article>
+<article class="card lc" style="--c:#ffb3cc"><div class="top"><span class="pin" aria-hidden="true">📍</span><span class="tag">CABANG 02</span></div><p class="lb">Smartshin House</p><h3>Dharmahusada</h3><p class="addr">Jl. Dharmahusada Indah Barat II, Surabaya.</p><a class="btn btn-soft" href="https://www.google.com/maps/search/?api=1&amp;query=Smart%20Shin%20House%20Dharmahusada%20Indah%20Barat%20II%20Surabaya" target="_blank" rel="noopener noreferrer" aria-label="Buka Google Maps untuk Smartshin House Dharmahusada">Buka Google Maps</a></article>
+<article class="card lc" style="--c:#8fd6fb"><div class="top"><span class="pin" aria-hidden="true">📍</span><span class="tag">CABANG 03</span></div><p class="lb">Smartshin House</p><h3>GP Gladstone</h3><p class="addr">Grand Pakuwon, Cluster Gladstone JC1-129, Surabaya.</p><a class="btn btn-soft" href="https://www.google.com/maps/place/Smart+Shin+House+GP+Gladstone+-+Daycare/@-7.241799,112.6665562,17z/data=!3m1!4b1!4m6!3m5!1s0x2dd7ff6896bbe309:0x732e2ed8135a3a8a!8m2!3d-7.241799!4d112.6665562!16s%2Fg%2F11y1tf757b" target="_blank" rel="noopener noreferrer" aria-label="Buka Google Maps untuk Smartshin House GP Gladstone">Buka Google Maps</a></article>
+</div>
+</div></section>
+<section class="sec con" id="connect" aria-labelledby="ct"><div class="wrap"><div class="cbox">
+<div><p class="eyebrow">LET'S CONNECT WITH US!</p><h2 id="ct">Yuk, terhubung<br>dengan kami!</h2><p class="t">Ingin mengetahui lebih lanjut mengenai program Smartshin House?</p><p class="t">Mom &amp; Dad dapat menghubungi Admin Smartshin House untuk mendapatkan informasi mengenai program, jadwal kegiatan, biaya, dan pendaftaran.</p><p class="t">Kami siap membantu dan menyambut Anda di Smartshin House! 😊🙏🏻</p></div>
+<div class="links" aria-label="Kontak Smartshin House">
+<a class="btn cb cb-wa" href="https://wa.me/62818391687?text=Halo%20Admin%20Smartshin%20House%2C%20saya%20ingin%20bertanya%20mengenai%20program%2C%20jadwal%2C%20biaya%2C%20dan%20pendaftaran.%20Terima%20kasih." target="_blank" rel="noopener noreferrer" aria-label="Chat WhatsApp Admin Smartshin House, +62 818-391-687"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg><span><strong>Chat WhatsApp</strong><small>+62 818-391-687</small></span></a>
+<a class="btn cb cb-ig" href="https://www.instagram.com/smartshinhouse/" target="_blank" rel="noopener noreferrer" aria-label="Buka Instagram Smartshin House"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg><span><strong>Instagram</strong><small>@smartshinhouse</small></span></a>
+</div></div></div></section>
+</main>
+<footer class="ftr"><div class="wrap ftr-in"><div><p class="fn">Smartshin House ❤️</p><p class="fnote">Love, Hope &amp; Creative</p></div><a class="up" href="#top" data-scroll-top>Kembali ke atas ↑</a></div></footer>
+<a class="wa" href="https://wa.me/62818391687?text=Halo%20Admin%20Smartshin%20House%2C%20saya%20ingin%20bertanya%20mengenai%20program%2C%20jadwal%2C%20biaya%2C%20dan%20pendaftaran.%20Terima%20kasih." target="_blank" rel="noopener noreferrer" aria-label="Chat WhatsApp Admin Smartshin House"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg><span>Chat</span></a>
+<script>
+(()=>{const r=document.documentElement;if(!("IntersectionObserver"in window)||matchMedia("(prefers-reduced-motion: reduce)").matches)return;
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.1});
+r.classList.add("js");document.querySelectorAll(".head,.card,.together,.cbox,.pic").forEach((el,i)=>{el.classList.add("reveal");el.style.transitionDelay=(i%3)*80+"ms";io.observe(el)});})();
+</script>
+<script>
+    // Kontak dapat dibaca oleh browser yang mendukung WebMCP.
+    (() => {
+      const context = document.modelContext;
+      if (!context?.registerTool) return;
+      const lifecycle = new AbortController();
+      const tool = {
+        name: "get_contact_links",
+        title: "Kontak Smartshin House",
+        description: "Read Smartshin House Instagram, WhatsApp and three Surabaya branch links from this page.",
+        inputSchema: { type: "object", properties: {}, additionalProperties: false },
+        annotations: { readOnlyHint: true, untrustedContentHint: false },
+        execute(input) {
+          if (!input || typeof input !== "object" || Array.isArray(input) || Object.keys(input).length) {
+            throw new TypeError("Expected an empty object.");
+          }
+          return {
+            name: "Smartshin House",
+            instagram: "https://www.instagram.com/smartshinhouse/",
+            whatsapp: "https://wa.me/62818391687",
+            phone: "+62 818-391-687",
+            location: "https://www.google.com/maps/place/Smart+Shin+House+GP+Gladstone+-+Daycare/@-7.241799,112.6665562,17z/data=!3m1!4b1!4m6!3m5!1s0x2dd7ff6896bbe309:0x732e2ed8135a3a8a!8m2!3d-7.241799!4d112.6665562!16s%2Fg%2F11y1tf757b",
+            additionalLocation: "https://www.google.com/maps/place/Smart+Shin+House+-+Daycare/@-7.3048456,112.784185,17z/data=!3m1!4b1!4m6!3m5!1s0x2dd7fbeb1501b851:0x7d85abf1f106aa28!8m2!3d-7.3048456!4d112.784185!16s%2Fg%2F11k5v4nlnv",
+            branches: [{"name":"Smartshin House Galaxy Bumi Permai","short":"Galaxy Bumi Permai","address":"Galaxy Bumi Permai Tahap II, Blok L5 No. 3, Medokan Semampir, Sukolilo, Surabaya.","map":"https://www.google.com/maps/place/Smart+Shin+House+-+Daycare/@-7.3048456,112.784185,17z/data=!3m1!4b1!4m6!3m5!1s0x2dd7fbeb1501b851:0x7d85abf1f106aa28!8m2!3d-7.3048456!4d112.784185!16s%2Fg%2F11k5v4nlnv","color":"mint"},{"name":"Smartshin House Dharmahusada","short":"Dharmahusada","address":"Jl. Dharmahusada Indah Barat II, Surabaya.","map":"https://www.google.com/maps/search/?api=1&query=Smart%20Shin%20House%20Dharmahusada%20Indah%20Barat%20II%20Surabaya","color":"peach"},{"name":"Smartshin House GP Gladstone","short":"GP Gladstone","address":"Grand Pakuwon, Cluster Gladstone JC1-129, Surabaya.","map":"https://www.google.com/maps/place/Smart+Shin+House+GP+Gladstone+-+Daycare/@-7.241799,112.6665562,17z/data=!3m1!4b1!4m6!3m5!1s0x2dd7ff6896bbe309:0x732e2ed8135a3a8a!8m2!3d-7.241799!4d112.6665562!16s%2Fg%2F11y1tf757b","color":"sky"}]
+          };
+        }
+      };
+      try {
+        Promise.resolve(context.registerTool(tool, { signal: lifecycle.signal })).catch(() => {});
+      } catch (_) {}
+      window.addEventListener("pagehide", () => lifecycle.abort(), { once: true });
+    })();
+  </script>
+<dialog class="gallery-viewer" id="image-viewer" aria-labelledby="image-viewer-title"><h2 class="gallery-sr" id="image-viewer-title">Galeri gambar Smartshin House</h2><button class="gallery-close" type="button" data-gallery-close aria-label="Tutup galeri"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 6 12 12 M18 6 6 18"/></svg></button><div class="gallery-carousel gallery-carousel--viewer" id="image-viewer-carousel" data-gallery-label="Brosur program" role="region" aria-roledescription="carousel" aria-label="Galeri gambar yang diperbesar"><div class="gallery-track" data-gallery-track id="image-viewer-track" tabindex="0" aria-label="Geser gambar yang diperbesar"></div><div class="gallery-controls" data-gallery-controls aria-hidden="true" hidden><span class="gallery-caption" data-gallery-caption></span><button class="gallery-arrow gallery-arrow--prev" type="button" data-gallery-prev aria-label="Brosur program: gambar sebelumnya" aria-controls="image-viewer-track"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button><div class="gallery-dots"></div><button class="gallery-arrow gallery-arrow--next" type="button" data-gallery-next aria-label="Brosur program: gambar berikutnya" aria-controls="image-viewer-track"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button></div><span class="gallery-sr" data-gallery-status role="status" aria-live="off" aria-atomic="true"></span></div></dialog>
+<script>
+(() => {
+  const INTERVAL = 10000;
+  const HIDE_AFTER = 2000;
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const galleries = new Set();
+  const viewer = document.getElementById('image-viewer');
+  const viewerRoot = document.getElementById('image-viewer-carousel');
+  const viewerTitle = document.getElementById('image-viewer-title');
+  let viewerGallery = null;
+  let opener = null;
+  const modulo = (value, length) => ((value % length) + length) % length;
+
+  class LoopGallery {
+    constructor(root, initialIndex = 0, modal = false) {
+      this.root = root;
+      this.track = root.querySelector('[data-gallery-track]');
+      this.realSlides = Array.from(this.track.children);
+      this.length = this.realSlides.length;
+      if (this.length < 2) return;
+      this.modal = modal;
+      this.current = modulo(initialIndex, this.length);
+      this.controls = root.querySelector('[data-gallery-controls]');
+      this.dots = Array.from(root.querySelectorAll('[data-gallery-dot]'));
+      this.status = root.querySelector('[data-gallery-status]');
+      this.caption = root.querySelector('[data-gallery-caption]');
+      this.abort = new AbortController();
+      this.width = this.track.clientWidth;
+      this.visible = true;
+      this.interacting = false;
+      this.keyboardFocus = false;
+      this.programmatic = false;
+      this.userScroll = false;
+      this.destroyed = false;
+      this.frame = 0;
+      this.autoTimer = 0;
+      this.hideTimer = 0;
+      this.finishTimer = 0;
+      this.drag = null;
+      this.suppressClick = 0;
+
+      const clone = slide => {
+        const copy = slide.cloneNode(true);
+        copy.dataset.galleryClone = 'true';
+        copy.setAttribute('aria-hidden', 'true');
+        copy.querySelectorAll('[id]').forEach(element => element.removeAttribute('id'));
+        copy.querySelectorAll('button,a,[tabindex]').forEach(element => element.tabIndex = -1);
+        return copy;
+      };
+      this.track.prepend(clone(this.realSlides[this.length - 1]));
+      this.track.append(clone(this.realSlides[0]));
+      this.slides = Array.from(this.track.children);
+      galleries.add(this);
+      this.bind();
+      this.render(true);
+      this.jump(this.current + 1);
+      this.controls.hidden = false;
+      this.setControls(false);
+      this.scheduleAuto();
+      if ('ResizeObserver' in window) {
+        this.resizeObserver = new ResizeObserver(() => this.resize());
+        this.resizeObserver.observe(this.track);
+      } else this.listen(window, 'resize', () => this.resize());
+      if (!modal && 'IntersectionObserver' in window) {
+        this.visibilityObserver = new IntersectionObserver(entries => {
+          this.visible = entries[0].isIntersecting;
+          this.scheduleAuto();
+        }, { threshold: 0.15 });
+        this.visibilityObserver.observe(root);
+      }
+    }
+
+    listen(element, event, callback, options = {}) {
+      element.addEventListener(event, callback, { ...options, signal: this.abort.signal });
+    }
+    offset(position) { return this.slides[position].offsetLeft - this.slides[0].offsetLeft; }
+    nearest() {
+      let best = 0;
+      this.slides.forEach((_, index) => {
+        if (Math.abs(this.track.scrollLeft - this.offset(index)) < Math.abs(this.track.scrollLeft - this.offset(best))) best = index;
+      });
+      return best;
+    }
+    jump(position) { this.track.scrollTo({ left: this.offset(position), behavior: 'instant' }); }
+    resize() {
+      if (this.destroyed || this.width === this.track.clientWidth) return;
+      this.width = this.track.clientWidth;
+      this.programmatic = false;
+      clearTimeout(this.finishTimer);
+      this.jump(this.current + 1);
+    }
+
+    render(automatic = false) {
+      this.realSlides.forEach((slide, index) => {
+        if (index !== this.current && slide.contains(document.activeElement)) this.track.focus({ preventScroll: true });
+        slide.setAttribute('aria-hidden', String(index !== this.current));
+        slide.querySelectorAll('[data-open-image]').forEach(button => button.tabIndex = index === this.current ? 0 : -1);
+      });
+      this.dots.forEach((dot, index) => dot.setAttribute('aria-current', String(index === this.current)));
+      const label = this.root.dataset.galleryLabel;
+      this.status.setAttribute('aria-live', automatic ? 'off' : 'polite');
+      this.status.textContent = label + ', gambar ' + (this.current + 1) + ' dari ' + this.length;
+      if (this.caption) this.caption.textContent = label + ' · ' + (this.current + 1) + '/' + this.length;
+      [this.current, modulo(this.current + 1, this.length)].forEach(index => {
+        const image = this.realSlides[index].querySelector('img');
+        if (image) image.loading = 'eager';
+      });
+    }
+
+    step(direction, automatic = false) {
+      this.userScroll = false;
+      const previous = this.current;
+      this.jump(previous + 1);
+      this.current = modulo(previous + direction, this.length);
+      this.programmatic = true;
+      this.render(automatic);
+      this.track.scrollTo({ left: this.offset(previous + 1 + direction), behavior: reducedMotion.matches ? 'instant' : 'smooth' });
+      this.deferFinish();
+      if (!automatic) { this.showControls(); this.scheduleAuto(); }
+    }
+    go(index) {
+      this.userScroll = false;
+      this.current = modulo(index, this.length);
+      this.programmatic = true;
+      this.render();
+      this.track.scrollTo({ left: this.offset(this.current + 1), behavior: reducedMotion.matches ? 'instant' : 'smooth' });
+      this.deferFinish();
+      this.showControls();
+      this.scheduleAuto();
+    }
+    deferFinish() {
+      clearTimeout(this.finishTimer);
+      this.finishTimer = setTimeout(() => this.finish(), 160);
+    }
+    finish() {
+      if (this.destroyed || this.interacting) return;
+      clearTimeout(this.finishTimer);
+      const physical = this.nearest();
+      const logical = modulo(physical - 1, this.length);
+      const restartAfterSwipe = this.userScroll;
+      this.userScroll = false;
+      this.programmatic = false;
+      if (logical !== this.current) { this.current = logical; this.render(false); }
+      if (physical === 0 || physical === this.length + 1) this.jump(this.current + 1);
+      if (restartAfterSwipe) this.scheduleAuto();
+    }
+
+    setControls(visible) {
+      this.root.classList.toggle('controls-visible', visible);
+      this.controls.setAttribute('aria-hidden', String(!visible));
+      this.controls.querySelectorAll('button').forEach(button => button.tabIndex = visible ? 0 : -1);
+    }
+    showControls() {
+      this.setControls(true);
+      clearTimeout(this.hideTimer);
+      this.hideTimer = setTimeout(() => {
+        if (this.root.querySelector(':focus-visible')) { this.showControls(); return; }
+        this.setControls(false);
+      }, HIDE_AFTER);
+    }
+    allowed() {
+      return !this.destroyed && !document.hidden && this.visible && !this.interacting && !this.keyboardFocus && (this.modal ? viewer.open : !viewer.open);
+    }
+    stopAuto() { clearTimeout(this.autoTimer); this.autoTimer = 0; }
+    scheduleAuto() {
+      this.stopAuto();
+      if (!this.allowed()) return;
+      this.autoTimer = setTimeout(() => {
+        if (this.allowed()) this.step(1, true);
+        this.scheduleAuto();
+      }, INTERVAL);
+    }
+
+    key(event) {
+      if (event.altKey || event.ctrlKey || event.metaKey) return;
+      const actions = { ArrowLeft: () => this.step(-1), ArrowRight: () => this.step(1), Home: () => this.go(0), End: () => this.go(this.length - 1) };
+      if (!Object.prototype.hasOwnProperty.call(actions, event.key)) return;
+      event.preventDefault();
+      this.keyboardFocus = true;
+      this.stopAuto();
+      actions[event.key]();
+    }
+
+    bind() {
+      this.listen(this.root.querySelector('[data-gallery-prev]'), 'click', () => this.step(-1));
+      this.listen(this.root.querySelector('[data-gallery-next]'), 'click', () => this.step(1));
+      this.dots.forEach((dot, index) => this.listen(dot, 'click', () => this.go(index)));
+      this.listen(this.root, 'keydown', event => this.key(event));
+      this.listen(this.root, 'pointermove', () => this.showControls(), { passive: true });
+      this.listen(this.root, 'pointerdown', () => {
+        this.showControls();
+        this.interacting = true;
+        this.userScroll = true;
+        this.keyboardFocus = false;
+        this.stopAuto();
+        if (this.programmatic) {
+          this.programmatic = false;
+          this.track.scrollTo({ left: this.track.scrollLeft, behavior: 'instant' });
+        }
+      }, { passive: true });
+      const release = () => {
+        if (!this.interacting) return;
+        this.interacting = false;
+        this.deferFinish();
+        this.scheduleAuto();
+      };
+      this.listen(window, 'pointerup', release, { passive: true });
+      this.listen(window, 'pointercancel', release, { passive: true });
+      this.listen(this.root, 'focusin', event => {
+        if (event.target.matches(':focus-visible')) {
+          this.keyboardFocus = true;
+          this.stopAuto();
+          this.showControls();
+        }
+      });
+      this.listen(this.root, 'focusout', () => {
+        queueMicrotask(() => {
+          this.keyboardFocus = Boolean(this.root.querySelector(':focus-visible'));
+          this.scheduleAuto();
+        });
+      });
+      this.listen(this.track, 'scroll', () => {
+        if (!this.frame) this.frame = requestAnimationFrame(() => {
+          this.frame = 0;
+          if (this.width !== this.track.clientWidth) { this.resize(); return; }
+          if (!this.programmatic) {
+            const logical = modulo(this.nearest() - 1, this.length);
+            if (logical !== this.current) { this.current = logical; this.render(false); }
+          }
+        });
+        this.deferFinish();
+      }, { passive: true });
+      this.listen(this.track, 'scrollend', () => this.finish());
+      this.listen(this.root, 'click', event => {
+        if (this.suppressClick > Date.now()) { this.suppressClick = 0; event.preventDefault(); event.stopPropagation(); return; }
+        const trigger = event.target.closest('[data-open-image]');
+        if (!trigger || this.modal) return;
+        opener = trigger;
+        openViewer(this.entries(), Number(trigger.dataset.imageIndex), this.root.dataset.galleryLabel);
+      }, { capture: true });
+
+      // Native swipe untuk HP; drag mouse hanya mengatur scroll yang sama.
+      this.listen(this.track, 'pointerdown', event => {
+        if (event.pointerType !== 'mouse' || event.button !== 0 || event.target.closest('.gallery-copy')) return;
+        this.drag = { x: event.clientX, start: this.track.scrollLeft, id: event.pointerId, active: false };
+      });
+      this.listen(this.track, 'pointermove', event => {
+        if (!this.drag) return;
+        const delta = event.clientX - this.drag.x;
+        if (!this.drag.active && Math.abs(delta) < 7) return;
+        if (!this.drag.active) {
+          this.drag.active = true;
+          this.track.setPointerCapture(event.pointerId);
+          this.track.style.scrollSnapType = 'none';
+          this.track.classList.add('is-dragging');
+        }
+        event.preventDefault();
+        this.track.scrollLeft = this.drag.start - delta;
+      });
+      const endDrag = () => {
+        if (!this.drag) return;
+        if (this.drag.active) {
+          this.suppressClick = Date.now() + 350;
+          this.track.style.scrollSnapType = '';
+          this.track.classList.remove('is-dragging');
+          const position = this.nearest();
+          this.current = modulo(position - 1, this.length);
+          this.programmatic = true;
+          this.render();
+          this.track.scrollTo({ left: this.offset(position), behavior: reducedMotion.matches ? 'instant' : 'smooth' });
+          this.deferFinish();
+        }
+        this.drag = null;
+      };
+      this.listen(this.track, 'pointerup', endDrag);
+      this.listen(this.track, 'pointercancel', endDrag);
+    }
+
+    entries() {
+      return this.realSlides.map(slide => {
+        const image = slide.querySelector('img');
+        return { src: image.getAttribute('src'), alt: image.alt, width: image.getAttribute('width'), height: image.getAttribute('height') };
+      });
+    }
+    destroy() {
+      this.destroyed = true;
+      this.abort.abort();
+      this.stopAuto();
+      clearTimeout(this.hideTimer);
+      clearTimeout(this.finishTimer);
+      cancelAnimationFrame(this.frame);
+      this.resizeObserver?.disconnect();
+      this.visibilityObserver?.disconnect();
+      galleries.delete(this);
+    }
+  }
+
+  function openViewer(entries, selectedIndex, label) {
+    if (typeof viewer.showModal !== 'function') return;
+    viewerGallery?.destroy();
+    const track = viewerRoot.querySelector('[data-gallery-track]');
+    const dots = viewerRoot.querySelector('.gallery-dots');
+    track.replaceChildren();
+    dots.replaceChildren();
+    viewerRoot.dataset.galleryLabel = label;
+    viewerTitle.textContent = label;
+    entries.forEach((entry, index) => {
+      const slide = document.createElement('div');
+      slide.className = 'gallery-slide';
+      slide.setAttribute('role', 'group');
+      slide.setAttribute('aria-roledescription', 'slide');
+      slide.setAttribute('aria-label', 'Gambar ' + (index + 1) + ' dari ' + entries.length);
+      const media = document.createElement('div');
+      media.className = 'gallery-media';
+      const image = document.createElement('img');
+      image.src = entry.src;
+      image.alt = entry.alt;
+      image.width = Number(entry.width);
+      image.height = Number(entry.height);
+      image.draggable = false;
+      image.decoding = 'async';
+      media.append(image);
+      slide.append(media);
+      track.append(slide);
+      const dot = document.createElement('button');
+      dot.type = 'button';
+      dot.className = 'gallery-dot';
+      dot.dataset.galleryDot = String(index);
+      dot.setAttribute('aria-label', 'Lihat gambar ' + (index + 1));
+      dot.setAttribute('aria-controls', 'image-viewer-track');
+      dots.append(dot);
+    });
+    galleries.forEach(gallery => gallery.stopAuto());
+    document.body.classList.add('gallery-viewer-open');
+    viewer.showModal();
+    viewerGallery = new LoopGallery(viewerRoot, selectedIndex, true);
+    viewerGallery.showControls();
+    viewer.querySelector('[data-gallery-close]').focus({ preventScroll: true });
+  }
+
+  document.querySelectorAll('[data-gallery]').forEach(root => new LoopGallery(root));
+  viewer.querySelector('[data-gallery-close]').addEventListener('click', () => viewer.close());
+  viewer.addEventListener('keydown', event => {
+    if (!event.defaultPrevented && !viewerRoot.contains(event.target)) viewerGallery?.key(event);
+  });
+  viewer.addEventListener('click', event => {
+    if (event.target !== viewer) return;
+    const box = viewer.getBoundingClientRect();
+    if (event.clientX < box.left || event.clientX > box.right || event.clientY < box.top || event.clientY > box.bottom) viewer.close();
+  });
+  viewer.addEventListener('close', () => {
+    viewerGallery?.destroy();
+    viewerGallery = null;
+    document.body.classList.remove('gallery-viewer-open');
+    if (opener) opener.focus({ preventScroll: true });
+    galleries.forEach(gallery => gallery.scheduleAuto());
+  });
+  document.addEventListener('visibilitychange', () => galleries.forEach(gallery => gallery.scheduleAuto()));
+})();
+</script>
+<script>
+(() => {
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  document.querySelectorAll('[data-scroll-top]').forEach(link => {
+    link.addEventListener('click', event => {
+      if (event.defaultPrevented || event.button > 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: reducedMotion.matches ? 'instant' : 'smooth'
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>
