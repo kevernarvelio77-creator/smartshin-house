@@ -230,6 +230,56 @@ body.gallery-viewer-open{overflow:hidden}
 @media(max-width:360px){.gallery-card .gallery-copy{padding:20px 20px 18px}.gallery-card .gallery-copy p{font-size:15.5px}.gallery-arrow--prev{left:8px}.gallery-arrow--next{right:8px}}
 @media(prefers-reduced-motion:reduce){.gallery-controls{transition:none}}
 
+/* Program November: bar ringkas; poster dan detail terbuka saat diketuk. */
+.november-program{margin:0 0 18px;border:2px solid #fff;border-radius:26px;background:#fffaf1;box-shadow:0 16px 34px -18px rgb(182 109 33/48%);overflow:hidden;min-width:0}
+.november-summary{display:grid;grid-template-columns:minmax(0,1fr) 24px;align-items:center;gap:12px;padding:16px;list-style:none;cursor:pointer;background:radial-gradient(circle at 100% 0,#b7f2d8 0,transparent 52%),linear-gradient(125deg,#ffe790,#fff2c5 62%,#ffe1ec);-webkit-tap-highlight-color:transparent}
+.november-summary::-webkit-details-marker{display:none}
+.november-summary::marker{content:""}
+.november-summary:focus-visible{outline:3px solid #e63e78;outline-offset:-4px;border-radius:24px}
+.november-intro{display:block;min-width:0}
+.november-month{display:inline-flex;padding:4px 9px;border-radius:999px;background:rgb(255 255 255/78%);font-size:11px;font-weight:900;letter-spacing:.6px;line-height:1.3;color:#725116}
+.november-title{display:block;margin:6px 0 4px;font-size:clamp(18.5px,5vw,27px);font-weight:900;line-height:1.2;letter-spacing:-.5px;color:var(--ink)}
+.november-subtitle{display:block;font-size:14px;font-weight:700;line-height:1.45;color:#46614f}
+.november-hint{display:block;margin-top:7px;font-size:12.5px;font-weight:900;line-height:1.4;color:#216d50}
+.november-hint-open{display:none}
+.november-program[open] .november-hint-closed{display:none}
+.november-program[open] .november-hint-open{display:block}
+.november-toggle{display:grid;place-items:center;width:24px;min-height:44px;color:#216d50}
+.november-toggle svg{width:22px;height:22px;transition:transform .18s}
+.november-program[open] .november-toggle svg{transform:rotate(180deg)}
+.november-content{display:grid;gap:22px;padding:18px 16px 22px;border-top:1px solid rgb(182 109 33/15%);background:linear-gradient(160deg,#fffaf1,#fff5e7)}
+.november-program:not([open])>.november-content{display:none}
+.november-poster{display:block;min-width:0;width:100%;max-width:420px;margin-inline:auto;border-radius:18px;overflow:hidden;background:#fff;box-shadow:0 12px 24px -16px rgb(27 46 75/55%);cursor:zoom-in}
+.november-poster img{display:block;width:100%;height:auto}
+.november-info{min-width:0}
+.november-info h3{margin:0 0 10px;font-size:clamp(25px,6.5vw,32px);font-weight:900;line-height:1.2;letter-spacing:-.6px}
+.november-description{font-size:16px;line-height:1.65;color:var(--muted)}
+.november-badges{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 18px;padding:0;list-style:none}
+.november-badges li{padding:5px 11px;border-radius:999px;background:#d5f6e7;font-size:13px;font-weight:800;line-height:1.5}
+.november-badges li:nth-child(2){background:#dcefff}
+.november-price{margin:0 0 18px;font-size:16px;line-height:1.5;color:var(--muted)}
+.november-price strong{font-size:27px;font-weight:900;letter-spacing:-.7px;color:#216d50}
+.november-price small{display:block;margin-top:3px;font-size:13.5px}
+.november-schedule-title{margin-bottom:10px;font-size:16px;font-weight:900}
+.november-schedule{display:grid;gap:9px;margin:0;padding:0;list-style:none}
+.november-schedule li{display:grid;grid-template-columns:52px minmax(0,1fr);align-items:center;gap:12px;padding:10px 12px;border:1px solid rgb(27 46 75/7%);border-radius:16px;background:#fff}
+.november-schedule time{display:grid;align-content:center;justify-items:center;min-height:57px;border-radius:12px;background:#fff0ac;line-height:1.15}
+.november-schedule time b{font-size:24px;font-weight:900}
+.november-schedule time span{margin-top:2px;font-size:12px;font-weight:800}
+.november-schedule li:nth-child(2) time{background:#d5f6e7}
+.november-schedule li:nth-child(3) time{background:#dcefff}
+.november-schedule li:nth-child(4) time{background:#ffe0ec}
+.november-menu strong{display:block;font-size:15.5px;font-weight:900;line-height:1.35}
+.november-menu span{display:block;margin-top:4px;font-size:14px;line-height:1.45;color:var(--muted)}
+.november-meta{display:grid;gap:9px;margin-top:18px}
+.november-meta p{display:flex;align-items:flex-start;gap:9px;font-size:14.5px;font-weight:700;line-height:1.5}
+.november-meta svg{width:20px;height:20px;margin-top:1px;flex:none;color:#216d50}
+.november-wa{width:100%;min-height:52px;margin-top:20px;padding:12px 16px;gap:9px;background:#25d366;color:var(--ink);font-size:15.5px;box-shadow:0 10px 20px -14px rgb(18 140 70/75%)}
+.november-wa svg{width:24px;height:24px;flex:none}
+@media(min-width:640px){.november-program{margin-bottom:24px}.november-summary{grid-template-columns:minmax(0,1fr) 28px;gap:20px;padding:20px 24px}.november-subtitle{font-size:16px}.november-month{font-size:12px}.november-hint{font-size:13.5px}.november-content{padding:26px;gap:28px}}
+@media(min-width:900px){.november-content{grid-template-columns:minmax(0,380px) minmax(0,1fr);align-items:start;gap:32px;padding:30px}.november-wa{width:fit-content;min-width:250px}}
+@media(prefers-reduced-motion:reduce){.november-toggle svg{transition:none}}
+
 </style>
 </head>
 <body id="top">
@@ -256,6 +306,42 @@ body.gallery-viewer-open{overflow:hidden}
 </section>
 <section class="sec" id="programs" aria-labelledby="pt"><div class="wrap">
 <div class="head"><p class="eyebrow">OUR PROGRAMS</p><h2 id="pt">Belajar seru.<br>Tumbuh bersama.</h2></div>
+<details class="november-program" id="program-november" aria-labelledby="november-title" open>
+  <summary class="november-summary">
+    <span class="november-intro">
+      <span class="november-month">NOVEMBER 2026</span>
+      <span class="november-title" id="november-title">Program November</span>
+      <span class="november-subtitle">Kids Cooking Club · Batch 1</span>
+      <span class="november-hint november-hint-closed">Lihat jadwal &amp; poster</span>
+      <span class="november-hint november-hint-open">Tutup detail program</span>
+    </span>
+    <span class="november-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+  </summary>
+  <div class="november-content">
+    <a class="november-poster" href="program-november.jpg" target="_blank" rel="noopener" aria-label="Perbesar poster Kids Cooking Club, Program November 2026">
+      <img src="program-november.jpg" width="905" height="1280" loading="lazy" decoding="async" alt="Poster Kids Cooking Club bersama Chef Tesa, November 2026. Program anak usia 3–12 tahun setiap Sabtu pukul 09.00 WIB di Smartshin House Dharmahusada. Biaya Rp325.000 per bulan, minimal 5 anak.">
+    </a>
+    <div class="november-info">
+      <h3>Kids Cooking Club</h3>
+      <p class="november-description">Belajar membuat kreasi makanan seru bersama <strong>Chef Tesa</strong>. Empat pertemuan dengan menu yang berbeda sepanjang November!</p>
+      <ul class="november-badges" aria-label="Informasi peserta"><li>Anak usia 3–12 tahun</li><li>4 pertemuan</li></ul>
+      <p class="november-price"><strong>Rp325.000</strong> /bulan<small>Minimal 5 anak per kelas.</small></p>
+      <p class="november-schedule-title">Empat Sabtu, empat kreasi seru</p>
+      <ol class="november-schedule" aria-label="Jadwal November 2026">
+        <li><time datetime="2026-11-07"><b>7</b><span>Nov</span></time><span class="november-menu"><strong>Healthy Breakfast</strong><span>Sandwich bentuk lucu &amp; lemonade</span></span></li>
+        <li><time datetime="2026-11-14"><b>14</b><span>Nov</span></time><span class="november-menu"><strong>Korean Lunch</strong><span>Jumokbab &amp; strawberry milk</span></span></li>
+        <li><time datetime="2026-11-21"><b>21</b><span>Nov</span></time><span class="november-menu"><strong>Tropical Dish</strong><span>Healthy smoothie bowl</span></span></li>
+        <li><time datetime="2026-11-28"><b>28</b><span>Nov</span></time><span class="november-menu"><strong>Fun Snack</strong><span>Donut &amp; milkshake</span></span></li>
+      </ol>
+      <div class="november-meta">
+        <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Setiap Sabtu · Pukul 09.00 WIB</span></p>
+        <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Smartshin House Dharmahusada</span></p>
+      </div>
+      <a class="btn november-wa" href="https://wa.me/62818391687?text=Halo%20Smartshin%20House%21%20%F0%9F%91%8B%20Saya%20tertarik%20dengan%20Program%20November%202026%20%E2%80%94%20Kids%20Cooking%20Club.%20Boleh%20dibantu%20informasi%20kelas%20dan%20cara%20pendaftarannya%3F%20Terima%20kasih%21%20%F0%9F%98%8A" target="_blank" rel="noopener noreferrer" aria-label="Tanya Admin Smartshin House mengenai Kids Cooking Club November 2026"><svg viewbox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg><span>Tanya Program November</span></a>
+    </div>
+  </div>
+</details>
+
 <div class="grid">
 <article class="card p1"><div class="top"><span class="ico" aria-hidden="true">🎨</span><span class="num" aria-hidden="true">01</span></div><h3>Preschool</h3><p>Program pendidikan anak usia dini melalui kegiatan belajar yang menyenangkan untuk mendukung tumbuh kembang, kreativitas, dan kemandirian anak.</p></article>
 
